@@ -1,0 +1,1 @@
+docker run -it --network=host --privileged --env="DISPLAY=$DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --device=/dev/bus/usb:/dev/bus/usb -v $(pwd)/backup_ws:/root/backup_ws -e AWS_ACCESS_KEY_ID="your-access-key-id" -e AWS_SECRET_ACCESS_KEY="your-secret-access-key" docker-image  

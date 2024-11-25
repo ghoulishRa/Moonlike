@@ -1,0 +1,96 @@
+# Use the official Ubuntu 20.04 as the base image
+FROM ubuntu:20.04
+
+# Set environment variables for non-interactive installation
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Update and install dependencies
+RUN apt-get update && apt-get install -y \
+    lsb-release \
+    gnupg2 \
+    curl \
+    usbutils \
+    libopencv-dev \
+    sudo \
+    && rm -rf /var/lib/apt/lists/*
+
+# Add the ROS Noetic package sources
+RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+
+# Add the ROS key to the apt keyring
+RUN curl -sSL 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xF42ED6FBAB17C654' | apt-key add -
+
+# Install ROS Noetic and required packages
+RUN apt-get update && apt-get install -y \
+    ros-noetic-desktop-full \
+    ros-noetic-rqt \
+    ros-noetic-rqt-graph \
+    ros-noetic-rqt-image-view \
+    ros-noetic-realsense2-camera \
+    ros-noetic-pcl-ros \
+    ros-noetic-rospy \
+    ros-noetic-camera-calibration \
+    python3-pip \
+    python3-opencv \
+    python3-rosdep \
+    python3-rosinstall \
+    python3-rosinstall-generator \
+    python3-wstool \
+    build-essential \
+    libpcl-dev \
+    libgflags-dev \
+    ros-noetic-cv-bridge \
+    ros-noetic-sensor-msgs \
+    ros-noetic-image-geometry \
+    ros-noetic-camera-info-manager \
+    ros-noetic-image-transport \
+    ros-noetic-image-publisher \
+    wget ros-noetic-tf2* \
+    libgoogle-glog-dev \
+    libusb-1.0-0-dev \
+    libeigen3-dev \
+    ros-noetic-diagnostic-updater \
+    ros-noetic-diagnostic-msgs \
+    && rm -rf /var/lib/apt/lists/*
+
+# Reinstall pip3 to ensure it's working correctly
+RUN apt-get update && apt-get install -y python3-pip && pip3 install --upgrade pip setuptools wheel
+
+# Initialize rosdep
+RUN rosdep init && rosdep update
+
+RUN pip3 install boto3
+RUN sudo -H pip install --ignore-installed PyYAML
+RUN pip install --ignore-installed blinker
+RUN pip install open3d # x86_64, arm64
+
+RUN sudo apt-get update && apt-get install -y \
+    python3-pcl \
+    pcl-tools \
+    cython3 \
+    ros-noetic-pcl-ros \
+    ros-noetic-pcl-msgs \
+    libdw-dev \
+    && rm -rf /var/lib/apt/lists/* 
+
+RUN apt-get update && apt-get install -y \
+    nano \
+    ros-noetic-rtabmap-ros \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set the working directory inside the container
+WORKDIR /root/catkin_ws
+
+# Create the workspace directories (src and build)
+RUN mkdir -p /root/catkin_ws/src
+
+# Set up the ROS environment for the workspace
+RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && cd /root/catkin_ws && catkin_make"
+
+# Source the ROS and workspace setup files
+RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc \
+    && echo "source /root/catkin_ws/devel/setup.bash" >> ~/.bashrc
+
+# Set up the environment and run the script
+SHELL ["/bin/bash", "-c"]
+CMD ["bash"]

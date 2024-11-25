@@ -1,0 +1,90 @@
+[0.000000] (-) TimerEvent: {}
+[0.000818] (ros1_bridge) JobQueued: {'identifier': 'ros1_bridge', 'dependencies': OrderedDict()}
+[0.001576] (ros1_bridge) JobStarted: {'identifier': 'ros1_bridge'}
+[0.014595] (ros1_bridge) JobProgress: {'identifier': 'ros1_bridge', 'progress': 'cmake'}
+[0.015009] (ros1_bridge) Command: {'cmd': ['/usr/bin/cmake', '/root/ros1_bridge/src/ros1_bridge', '-DCMAKE_INSTALL_PREFIX=/root/ros1_bridge/install/ros1_bridge'], 'cwd': '/root/ros1_bridge/build/ros1_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'IsraUbuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/install/flir_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install/save_files:/root/ros2_ws/install/flir_camera_msgs:/root/ros2_ws/install/flir_camera_description:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/ros1_bridge/build/ros1_bridge'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/ros2_ws/install/save_files/lib/python3.10/site-packages:/root/ros2_ws/install/flir_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install/flir_camera_msgs:/root/ros2_ws/install/flir_camera_description:/root/ros2_ws/install/save_files:/opt/ros/humble')]), 'shell': False}
+[0.099917] (-) TimerEvent: {}
+[0.173037] (ros1_bridge) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.200066] (-) TimerEvent: {}
+[0.290384] (ros1_bridge) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.300244] (-) TimerEvent: {}
+[0.301999] (ros1_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400412] (-) TimerEvent: {}
+[0.402610] (ros1_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.409709] (ros1_bridge) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.410062] (ros1_bridge) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.410772] (ros1_bridge) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.414519] (ros1_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500592] (-) TimerEvent: {}
+[0.524637] (ros1_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.535047] (ros1_bridge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.535486] (ros1_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.535844] (ros1_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.542201] (ros1_bridge) StdoutLine: {'line': b'-- Found rmw: 6.1.2 (/opt/ros/humble/share/rmw/cmake)\n'}
+[0.600781] (-) TimerEvent: {}
+[0.701262] (-) TimerEvent: {}
+[0.727554] (ros1_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.801440] (-) TimerEvent: {}
+[0.884858] (ros1_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.901598] (-) TimerEvent: {}
+[0.923961] (ros1_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.933867] (ros1_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.946353] (ros1_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.958026] (ros1_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.979226] (ros1_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.001952] (-) TimerEvent: {}
+[1.044193] (ros1_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.048262] (ros1_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.102125] (-) TimerEvent: {}
+[1.202670] (-) TimerEvent: {}
+[1.209934] (ros1_bridge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.251224] (ros1_bridge) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.302840] (-) TimerEvent: {}
+[1.306939] (ros1_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.320674] (ros1_bridge) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.403006] (-) TimerEvent: {}
+[1.430105] (ros1_bridge) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.430564] (ros1_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.503151] (-) TimerEvent: {}
+[1.534739] (ros1_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.536309] (ros1_bridge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.603021] (ros1_bridge) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.603198] (-) TimerEvent: {}
+[1.609765] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'roscpp'\n"}
+[1.613010] (ros1_bridge) StdoutLine: {'line': b"--   No package 'roscpp' found\n"}
+[1.613455] (ros1_bridge) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:36 (message):\n'}
+[1.613558] (ros1_bridge) StderrLine: {'line': b'  Failed to find ROS 1 roscpp, skipping...\n'}
+[1.613605] (ros1_bridge) StderrLine: {'line': b'\n'}
+[1.613647] (ros1_bridge) StderrLine: {'line': b'\x1b[0m\n'}
+[1.680915] (ros1_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.686857] (ros1_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[1.688318] (ros1_bridge) StdoutLine: {'line': b'-- Build files have been written to: /root/ros1_bridge/build/ros1_bridge\n'}
+[1.697623] (ros1_bridge) CommandEnded: {'returncode': 0}
+[1.698493] (ros1_bridge) JobProgress: {'identifier': 'ros1_bridge', 'progress': 'build'}
+[1.699350] (ros1_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros1_bridge/build/ros1_bridge', '--', '-j8', '-l8'], 'cwd': '/root/ros1_bridge/build/ros1_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'IsraUbuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/install/flir_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install/save_files:/root/ros2_ws/install/flir_camera_msgs:/root/ros2_ws/install/flir_camera_description:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/ros1_bridge/build/ros1_bridge'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/ros2_ws/install/save_files/lib/python3.10/site-packages:/root/ros2_ws/install/flir_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install/flir_camera_msgs:/root/ros2_ws/install/flir_camera_description:/root/ros2_ws/install/save_files:/opt/ros/humble')]), 'shell': False}
+[1.703328] (-) TimerEvent: {}
+[1.753676] (ros1_bridge) CommandEnded: {'returncode': 0}
+[1.787669] (ros1_bridge) JobProgress: {'identifier': 'ros1_bridge', 'progress': 'install'}
+[1.799645] (ros1_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros1_bridge/build/ros1_bridge'], 'cwd': '/root/ros1_bridge/build/ros1_bridge', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'IsraUbuntu'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/ros2_ws/install/flir_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install/save_files:/root/ros2_ws/install/flir_camera_msgs:/root/ros2_ws/install/flir_camera_description:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/ros1_bridge/build/ros1_bridge'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/ros2_ws/install/save_files/lib/python3.10/site-packages:/root/ros2_ws/install/flir_camera_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install/flir_camera_msgs:/root/ros2_ws/install/flir_camera_description:/root/ros2_ws/install/save_files:/opt/ros/humble')]), 'shell': False}
+[1.803418] (-) TimerEvent: {}
+[1.807707] (ros1_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.807932] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ament_index/resource_index/package_run_dependencies/ros1_bridge\n'}
+[1.808135] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ament_index/resource_index/parent_prefix_path/ros1_bridge\n'}
+[1.808368] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/environment/ament_prefix_path.sh\n'}
+[1.808533] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/environment/ament_prefix_path.dsv\n'}
+[1.808732] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/environment/path.sh\n'}
+[1.808883] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/environment/path.dsv\n'}
+[1.809068] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/local_setup.bash\n'}
+[1.809240] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/local_setup.sh\n'}
+[1.809480] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/local_setup.zsh\n'}
+[1.809638] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/local_setup.dsv\n'}
+[1.810018] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/package.dsv\n'}
+[1.810221] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ament_index/resource_index/packages/ros1_bridge\n'}
+[1.810412] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/cmake/find_ros1_package.cmake\n'}
+[1.810557] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/cmake/find_ros1_interface_packages.cmake\n'}
+[1.810743] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/cmake/ros1_bridgeConfig.cmake\n'}
+[1.810841] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/cmake/ros1_bridgeConfig-version.cmake\n'}
+[1.810987] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/package.xml\n'}
+[1.813805] (ros1_bridge) CommandEnded: {'returncode': 0}
+[1.871735] (ros1_bridge) JobEnded: {'identifier': 'ros1_bridge', 'rc': 0}
+[1.872661] (-) EventReactorShutdown: {}

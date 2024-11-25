@@ -1,0 +1,17 @@
+/root/ros1_bridge/install/ros1_bridge/share/ament_index/resource_index/package_run_dependencies/ros1_bridge
+/root/ros1_bridge/install/ros1_bridge/share/ament_index/resource_index/parent_prefix_path/ros1_bridge
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/environment/ament_prefix_path.sh
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/environment/ament_prefix_path.dsv
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/environment/path.sh
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/environment/path.dsv
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/local_setup.bash
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/local_setup.sh
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/local_setup.zsh
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/local_setup.dsv
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/package.dsv
+/root/ros1_bridge/install/ros1_bridge/share/ament_index/resource_index/packages/ros1_bridge
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/cmake/find_ros1_package.cmake
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/cmake/find_ros1_interface_packages.cmake
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/cmake/ros1_bridgeConfig.cmake
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/cmake/ros1_bridgeConfig-version.cmake
+/root/ros1_bridge/install/ros1_bridge/share/ros1_bridge/package.xml

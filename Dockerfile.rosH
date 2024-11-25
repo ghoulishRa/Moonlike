@@ -1,0 +1,92 @@
+# Usa la imagen base de Ubuntu 22.04
+FROM ubuntu:22.04
+
+# Configura las variables de entorno para ROS 2
+ENV LANG=C.UTF-8
+ENV LC_ALL=C.UTF-8
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Instala herramientas iniciales para GUI (X11) y dependencias adicionales
+RUN apt-get update && apt-get install -y \
+    x11-apps \
+    dbus-x11 \
+    cmake clang libboost-all-dev \
+    curl \
+    gnupg2 \
+    lsb-release \
+    build-essential \
+    nano \
+    git \
+    locales \
+    dirmngr \
+    software-properties-common \
+    libcanberra-gtk-module \
+    libcanberra-gtk3-module \
+    python3-pip \
+    && add-apt-repository universe \
+    && apt-get update \
+    && locale-gen en_US en_US.UTF-8 \
+    && update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Agrega las claves GPG y el repositorio de ROS 2 Humble
+RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | apt-key add - \
+    && echo "deb http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list
+
+# Instala ROS 2 Humble
+RUN apt-get update && apt-get install -y \
+    ros-humble-desktop \
+    ros-dev-tools \
+    ros-humble-rqt* \
+    ros-humble-rviz2 \
+    ros-humble-ament-cmake \
+    && rm -rf /var/lib/apt/lists/*
+
+# Instalar rosdep y herramientas adicionales
+RUN pip3 install -U colcon-common-extensions rosdep vcstool
+
+# Inicializa rosdep
+RUN rosdep init && rosdep update
+
+# Instala paquetes adicionales ROS 2 y PCL
+RUN apt-get update && apt-get install -y \
+    ros-humble-spinnaker-camera-driver \
+    ros-humble-velodyne \
+    ros-humble-velodyne-driver \
+    python3-opencv \
+    ros-humble-pcl-conversions \
+    libpcl-dev \
+    pcl-tools \
+    && rm -rf /var/lib/apt/lists/*
+
+# Instala dependencias de Python para ciencia de datos y Open3D como alternativa a python-pcl
+RUN pip3 install --no-cache-dir numpy==1.23.5 scipy==1.10.1 cython==0.29.36
+RUN pip3 install --no-cache-dir open3d boto3
+
+# Instalación de dependencias adicionales para Orbbec
+RUN apt-get update && apt-get install -y \
+    libgflags-dev \
+    nlohmann-json3-dev \
+    ros-humble-image-transport \
+    ros-humble-image-publisher \
+    ros-humble-camera-info-manager \
+    ros-humble-diagnostic-updater \
+    ros-humble-diagnostic-msgs \
+    ros-humble-statistics-msgs \
+    ros-humble-backward-ros \
+    libdw-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Configuración de Docker
+WORKDIR /root/ros2_ws
+RUN mkdir -p /root/ros2_ws/src
+
+# Configura el entorno de ROS 2
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+SHELL ["/bin/bash", "-c"]
+
+# Exponer puertos para GUI y rqt
+ENV QT_X11_NO_MITSHM=1
+ENV DISPLAY=:0
+
+CMD ["bash"]
