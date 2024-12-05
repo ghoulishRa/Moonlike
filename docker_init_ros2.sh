@@ -6,4 +6,4 @@ docker run --rm -it --network=host --privileged \
   -v $(pwd)/ros2_ws:/root/ros2_ws \
   -v $(pwd)/rosbag:/root/rosbag \
   -v $(pwd)/ros1_bridge:/root/ros1_bridge \
-  ros2_humble_updated 
+  ros_humble
