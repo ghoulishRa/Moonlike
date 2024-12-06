@@ -46,11 +46,21 @@ docker build -f Dockerfile.rosH -t ros_humble .
 Run the bash file to start the ROS1 (Noetic) container
 
 ```bash
-./docker_init_ros<$VERSION$>.sh
+./docker_init_ros1.sh
 ```
 
 ### RGBD cameras (Gemini and Gemini 2L)
 
+Change the USB port number in the multi_camera.launch file before. Check the USB connections by running this command:
+
+```bash
+./list_ob_devices.sh 
+```
+After checking your usb ports, change the serial number on th file
+
+```python
+<arg name="usb_port" value="4-2"/>
+```
 Run the multi_camera.launch and the multi_camera_tf.launch
 
 ```bash
@@ -84,6 +94,30 @@ Run the natnet launcher
 ```bash
 ~/catkin_ws roslaunch natnet_ros_cpp natnet_ros.launch
 ```
+### Rtabmap 
+
+The following command helps to run the rtabmap with the gemini2 camera parameters
+
+```bash
+roslaunch rtabmap_launch rtabmap.launch \
+    rgb_topic:=/camera_02/color/image_raw \
+    depth_topic:=/camera_02/depth/image_raw \
+    camera_info_topic:=/camera_02/color/camera_info \
+    frame_id:=camera_02_link\
+    subscribe_rgbd:=false\
+    approx_sync:=true \
+    odom_frame_id:=odom
+```
+Here are two videos of the sequences
+
+### Sequence A
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B2oyJ_NOAUg?si=V0LOH1piGMg9vC0D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Sequence B
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HjKqLHMNDjg?si=XWB-MU2klFkYTulS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## ros2_ws
 
@@ -122,6 +156,11 @@ Save the file and exit nano. In another terminal save the changes in your contai
 ```bash
 docker commit <docker_container_id> ros_humble
 ```
+ Now you can launch the file 
+
+```bash
+~/ros2_ws ros2 launch spinnaker_camera_driver driver_node.launch.py 
+```
 ### LiDAR
 
 Run the velodyne launcher for the 16 rings LiDAR
@@ -129,10 +168,6 @@ Run the velodyne launcher for the 16 rings LiDAR
 ```bash
 ~/ros2_ws ros2 launch velodyne velodyne-all-nodes-VLP16-launch.py 
 ```
-
-
-
-
 
 
 
