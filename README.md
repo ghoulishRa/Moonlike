@@ -110,13 +110,24 @@ roslaunch rtabmap_launch rtabmap.launch \
 ```
 Here are two videos of the sequences
 
-### Sequence A
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B2oyJ_NOAUg?si=V0LOH1piGMg9vC0D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-### Sequence B
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HjKqLHMNDjg?si=XWB-MU2klFkYTulS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://youtu.be/HjKqLHMNDjg">
+        <img src="https://img.youtube.com/vi/HjKqLHMNDjg/0.jpg" alt="Video 1" width="300"/>
+      </a>
+      <br>
+      <strong>Video 1</strong>
+    </td>
+    <td align="center">
+      <a href="https://youtu.be/B2oyJ_NOAUg">
+        <img src="https://img.youtube.com/vi/B2oyJ_NOAUg/0.jpg" alt="Video 2" width="300"/>
+      </a>
+      <br>
+      <strong>Video 2</strong>
+    </td>
+  </tr>
+</table>
 
 
 ## ros2_ws
