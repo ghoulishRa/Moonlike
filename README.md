@@ -68,6 +68,20 @@ Run the multi_camera.launch and the multi_camera_tf.launch
 ~/catkin_ws roslaunch multi_launch multi_camera_tf.launch
 ```
 
+### Run the timestamp node
+
+```bash
+rosrun time_stamp time_stamp_node.py
+```
+
+### PCL registration
+
+If you wish to implement the two pointcloud registration try this command:
+
+```bash
+rosrun pcl_registration pcl_registration_node.py
+```
+
 ### Optitrack natnet package
 
 Clone the Natnet repository to add the natnet ROS package at the workspace, then build the enviroment
@@ -114,21 +128,32 @@ Here are two videos of the sequences
   <tr>
     <td align="center">
       <a href="https://youtu.be/HjKqLHMNDjg">
-        <img src="https://img.youtube.com/vi/HjKqLHMNDjg/0.jpg" alt="Video 1" width="300"/>
+        <img src="https://img.youtube.com/vi/HjKqLHMNDjg/0.jpg" alt="Video 1" width="500"/>
       </a>
       <br>
       <strong>Video 1</strong>
     </td>
     <td align="center">
       <a href="https://youtu.be/B2oyJ_NOAUg">
-        <img src="https://img.youtube.com/vi/B2oyJ_NOAUg/0.jpg" alt="Video 2" width="300"/>
+        <img src="https://img.youtube.com/vi/B2oyJ_NOAUg/0.jpg" alt="Video 2" width="500"/>
       </a>
       <br>
       <strong>Video 2</strong>
     </td>
   </tr>
+    <tr>
+    <td align="center">
+        <img src=".assets/23.jpg" alt="" width="500"/>
+        <br>
+        <strong>Image 1</strong>
+    </td>
+    <td align="center">
+        <img src=".assets/25.jpg" alt="Image 2" width="500"/>
+        <br>
+        <strong>Image 2</strong>
+    </td>
+    </tr>
 </table>
-
 
 ## ros2_ws
 
@@ -180,6 +205,21 @@ Run the velodyne launcher for the 16 rings LiDAR
 ~/ros2_ws ros2 launch velodyne velodyne-all-nodes-VLP16-launch.py 
 ```
 
+### Save Files
 
+Once all the things you want to run are set, run the save files node at the sametime in each cotinaer you have running
+
+For ROS1
+
+```bash
+rosrun save_files save_files_node.py
+```
+
+For ROS2
+
+```bash
+ros2 run save_files save_files_node 
+```
+<img src=".assets/dataflow.png" alt="image" width="900"/>
 
 
